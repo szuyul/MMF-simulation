@@ -10,3 +10,7 @@ Scripts (examples):
 1. MMF_show_PIM displays the computed PIMs of a user defined MMF.
 2. MMF_show_LP displays the computed LP modes as well as Laguerre-Gaussian modes of a user defined MMF.
 3. MMF_focusing simulates the experiments of MMF TM measurements and focusing through the MMF with obtained TM.
+
+
+created by Szu-Yu Lee (szuyul@mit.edu) 2017-2020
+The Wellman Center for Photomedicine
