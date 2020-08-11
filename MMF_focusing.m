@@ -72,7 +72,7 @@ Length = 1e-1*ones(1, 10);                                                  % 10
 Rho = 0.25 + 0.1 * (rand(1, numel(Length)) - 0.5);                           % radius of curvature of the bending between 0.2 - 0.3 m
 Theta = (2*pi) * rand(1, numel(Length));                                    % orientation of the bending projected on x-y plane
 
-[ T_HH_new, T_HV_new, T_VH_new, T_VV_new ] = MMF_simTM_ccd( lambda, D, NA, Length, Rho, Theta, N, input_num );
+[ T_HH_new, T_HV_new, T_VH_new, T_VV_new ] = MMF_simTM_camera( lambda, D, NA, Length, Rho, Theta, N, input_num );
 
 %% simulate distorted focus when the fiber shape is deformed
 output_img_H_new = reshape( abs(T_HH_new*invT_HH).^2, [N N N^2] );
